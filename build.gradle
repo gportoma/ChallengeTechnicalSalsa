@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group = 'br.com.guilherme'
+version = '1.0.0'
+sourceCompatibility = '11'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.aventstack:extentreports:5.0.9'
+    implementation 'com.itextpdf.tool:xmlworker:5.5.13.3'
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'commons-net:commons-net:3.8.0'
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    implementation 'junit:junit:4.13.2'
+    implementation 'io.rest-assured:json-path:5.1.0'
+    implementation 'io.rest-assured:rest-assured:5.1.0'
+    implementation 'io.rest-assured:rest-assured-common:5.1.0'
+    implementation 'io.rest-assured:xml-path:5.1.0'
+
+    implementation 'org.yaml:snakeyaml:2.2'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}

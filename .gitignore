@@ -1,0 +1,31 @@
+# Arquivos de configuração de IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+*.idea/
+*.class
+
+# Arquivos específicos do sistema operacional macOS
+.DS_Store
+
+# Arquivos específicos do sistema operacional Windows
+Thumbs.db
+
+# Diretório de compilação e artefatos
+build/
+bin/
+target/
+out/
+
+# Arquivos de configuração do Gradle
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+
+# Outras configurações específicas do projeto
+settings.gradle
+
+# Outros arquivos de configuração que devem ser ignorados
+*.log
